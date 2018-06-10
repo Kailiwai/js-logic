@@ -492,7 +492,50 @@ console.log("sumitup ", sumItUp(numArray));
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var east = [];
+var west = [];
+
+function allStars(ballers) {
+  for (var i = 0; i < ballers.length; i++) {
+    console.log(ballers[i]);
+    if (i % 2 === 0) {
+      east.push(ballers[i]);
+    }else{
+      west.push(ballers[i]);
+    }
+  }
+}
+allStars(players);
+console.log("east: ", east);
+console.log("west: ", west);
+
+
 /*
+var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+  var east = [];
+  var west = [];
+
+  function allStars(ballers){
+    for(var i = 0; i<ballers.length; i++){
+      console.log(ballers[i]);
+      if(i%2 === 0){
+        //console.log(i);
+      east.push(ballers[i]);
+      }else{
+        west.push(ballers[i]);
+      }
+    }
+  }
+  allStars(players);
+  console.log("east: ", east);
+  console.log("west: ", west);
+*/
+
+/*
+
+
+
+
  * #19
  * Function - subways
  * Create a function named `subways` which takes a parameter: `special`.
