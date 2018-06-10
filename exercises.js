@@ -267,7 +267,15 @@ console.log("I have $20 and I'm 21 years old:", daClub(20, 21));
  * If EITHER the number value is greater than or equal to 120 or the boolean value is true, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */ 
-
+function graduation(credits, thesis) {
+  if ((credits >= 120) && (thesis === "true")) {
+    return "Congratulations on a job well done."
+  }else{
+    return "See you in summer school."
+  }
+}
+console.log("I have 120 credits and I completed my thesis: ", graduation(120, "true"));
+console.log("I have 119 credits and I have completed my thesis: ", graduation(119, "false"));
 
 
 /*
