@@ -321,6 +321,19 @@ console.log("Speed is greater than 100:", moneyTrain(101));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+var budget = 21;
+var doughnutPrice = 5;
+var doughnutBought = 0;
+function buyDoughnut() {
+  if (budget >= doughnutPrice) {
+    budget -= doughnutPrice;
+    doughnutBought++;
+  }
+}
+console.log("Budget remaining: ", budget);
+console.log("Doughnuts bought: ", doughnutBought);
+
+
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
