@@ -449,6 +449,34 @@ for (var i = 0; i < myFavFoods.length; i++) {
  * Console.log your result.
 */
 
+var numArray = [3, 6042, 42, 1288, 96814];
+var total = 0;
+function sumItUp(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    console.log("Number: " + arr[i]);
+    total += arr[i];
+  }
+  return total;
+}
+console.log("Sum Total: ", sumItUp(numArray));
+
+
+
+/*
+var numArray = [22, 33, 44, 55, 66];
+
+function sumItUp(arr){
+  var total = 0;
+  for(var i = 0; i<arr.length; i++){
+    console.log(arr[i]);
+    total += arr[i]; // total = total + arr[i];
+  }
+  return total;
+
+}
+
+console.log("sumitup ", sumItUp(numArray));
+
 
 
 /*
