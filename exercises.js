@@ -418,7 +418,12 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
+var cardPlayers = ["1", "2", "3", "4", "5"]
 
+for (var i = 0; i < cardPlayers.length; i++) {
+  console.log("Card Player: " + cardPlayers[i]);
+
+}
 
 /* 
  * #16
