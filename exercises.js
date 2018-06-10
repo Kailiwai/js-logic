@@ -532,11 +532,7 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
 */
 
 /*
-
-
-
-
- * #19
+* #19
  * Function - subways
  * Create a function named `subways` which takes a parameter: `special`.
  *
@@ -547,7 +543,37 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
  * Console.log your results.
 */ 
 
-  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+function subways(special) {
+  for (var i = 0; i < subOftheDay.length; i++) {
+    if (i % 2 === 1) {
+      console.log(i);
+      special.splice(i, 1, "Classic Tuna");
+      special[i] = "Classic Tuna";
+    }
+  } 
+  return special;
+}
+subways(subOftheDay);
+console.log(subOftheDay);
+
+
+/*var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+function subways(special){
+  for(var i = 0; i<special.length; i++){
+    if(i%2 === 1){
+      console.log(i);
+      special.splice(i, 1, "Classic Tuna"); 
+      special[i] = "Classic Tuna";
+    }
+
+  }
+ return special;
+}
+
+subways(subOftheDay);
+console.log(subOftheDay);
+*/
 
 
 /*
