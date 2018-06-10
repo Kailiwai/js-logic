@@ -34,7 +34,7 @@ function canVote(age) {
   }
 }
 
-console.log(canVote(21));
+console.log("Is 21 greater than the voting age in Hawaii?", canVote(21));
 
 /*
  * #2
@@ -72,7 +72,7 @@ function isGreaterThan(first, second) {
     return "true"
   }
 }
-console.log(isGreaterThan(3, 2));
+console.log("Is 3 > 2?:", isGreaterThan(3, 2));
 
 
 /*
@@ -175,9 +175,9 @@ function spareChange(money) {
     return "false"
   }
 }
-console.log(spareChange(100));
-console.log(spareChange(101));
-console.log(spareChange(99));
+console.log("spareChange:", spareChange(100));
+console.log("spareChange:", spareChange(101));
+console.log("spareChange:", spareChange(99));
 
 
 /*
@@ -200,9 +200,9 @@ function dirty30(one, two, three) {
     return "false"
   }
 }
-console.log(dirty30(15, 16, 17));
-console.log(dirty30(1, 2, 3));
-console.log(dirty30(15, 14, 1));
+console.log("dirty30:", dirty30(15, 16, 17));
+console.log("dirty30:", dirty30(1, 2, 3));
+console.log("dirty30:", dirty30(15, 14, 1));
 
 
 /*
@@ -223,8 +223,8 @@ function evenStevens(num) {
     return "false"
   }
 }
-console.log("evenStevens", 4);
-console.log("evenStevens", 3);
+console.log("evenStevens:", 4);
+console.log("evenStevens:", 3);
 
 
 
@@ -240,6 +240,19 @@ console.log("evenStevens", 3);
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
+function daClub(cover, age) {
+  if ((cover > 21) && (age >= 21)) {
+    return "Welcome to the Legends Lounge."
+  }else{
+    return "Chuck E. Cheese is across the street."
+  }
+}
+console.log("I have $25 and I'm 22 years old:", daClub(25, 22));
+console.log("I have $20 and I'm 20 years old:", daClub(20, 20));
+console.log("I have $20 and I'm 21 years old:", daClub(20, 21));
+console.log("I have $20 and I'm 21 years old:", daClub(20, 21));
+
+
 
 
 /*
