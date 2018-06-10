@@ -147,7 +147,15 @@ console.log(isEqual("George", "george"));
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
-
+function notEqual(first, second) {
+  if (first === second) {
+    return "Cause it's like you're my mirror"
+  }else{
+    return "Opposites do attract"
+  }
+}
+console.log(notEqual("Kailiwai", "Kaiiiwai"));
+console.log(notEqual("Kailiwai", "Kailiwai"));
 
 /*
  * #8
