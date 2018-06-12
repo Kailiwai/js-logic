@@ -17,6 +17,7 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
   return "Get back to coding!";
 };*/
 
+console.log(test);
 
 /*
  * #1
@@ -28,13 +29,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  *
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
+var votingAge = 22
 function canVote(age) {
   if(age >= 18) {
     return "true"
   }
 }
 
-console.log("Is 21 greater than the voting age in Hawaii?", canVote(21));
+console.log("Is " + votingAge + " greater than the voting age in Hawaii?", canVote(votingAge));
 
 /*
  * #2
@@ -110,7 +112,8 @@ function bigBird(word) {
     return "Word to Big Bird: "
   }
 }
-console.log(bigBird("dog"), "dog");
+console.log(bigBird("zebra"), "zebra");
+
 
 
 /*
